@@ -59,11 +59,13 @@
                         <li>Location: Amos Eaton 215</li>
                         <li>Time: Thurdays 4:00PM - 5:00PM EST</li>
                         <li>Organizers: Chanaka D. Mapa Mudiyanselage, Dr. Kangbo Li, &amp; Prof. Fabian M. Faulstich</li>
-                        <li>This seminar focuses on numerical
+                        <li style="margin-top: 10px">This seminar focuses on numerical
                             methods with an emphasis on applications. The
                             speakers are mostly graduate students, but both students and 
                             faculty are welcome to atttend. There will be
                             <b>pizza</b>.
+                        </li>
+                        <li ><p style="color: rgb(167, 83, 52);">Notice: Ada Wang's talk will be on 02/21 (Friday) from 12:30pm - 1:30PM @ AE 214</p>
                         </li>
                     </ul>
                     <!-- <p>Special date: <b>Ada Wang's talk is on Friday instead of Thursday</b></p> -->
@@ -78,7 +80,37 @@
                         </tr>
                         <tr>
                             <td>02/06</td>
-                            <td>TBA</td>
+                            <td>
+                              <details>
+                                   <summary>
+                                    Damped Proximal Augmented Lagrangian
+                                    Method for weakly-Convex Problems with Convex
+                                    Constraints                                   
+                                   </summary>
+                                  <p>
+                                    We give a damped proximal augmented Lagrangian method
+                                    (DPALM) for solving problems with a weakly-convex objective and convex
+                                    linear/non-linear constraints. Instead of taking a full stepsize, DPALM adopts
+                                    a damped dual stepsize to ensure the boundedness of dual iterates. We show
+                                    that DPALM can produce a (near) ε-KKT point within O(ε−2) outer itera-
+                                    tions if each DPALM subproblem is solved to a proper accuracy. In addition,
+                                    we establish overall iteration complexity of DPALM when the objective is ei-
+                                    ther a regularized smooth function or in a regularized compositional form.
+                                    For the former case, DPALM achieves the complexity of eO ε−2.5 pro-
+                                    duce an ε-KKT point by applying an accelerated proximal gradient (APG)
+                                    method to each DPALM subproblem. For the latter case, the complexity of
+                                    DPALM is eO ε−3 to produce a near ε-KKT point by using an APG to
+                                    solve a Moreau-envelope smoothed version of each subproblem. Our outer it-
+                                    eration complexity and the overall complexity either generalize existing best
+                                    ones from unconstrained or linear-constrained problems to convex-constrained
+                                    ones, or improve over the best-known results on solving the same-structured
+                                    problems. Furthermore, numerical experiments on linearly/quadratically con-
+                                    strained non-convex quadratic programs and linear-constrained robust nonlin-
+                                    ear least squares are conducted to demonstrate the empirical efficiency of the
+                                    proposed DPALM over several state-of-the art methods.
+                                   </p>
+                              </details> 
+                              </td>
                             <td>Hari Dahal</td>
                         </tr> <tr>
                             <td>02/13</td>
@@ -96,22 +128,52 @@
                         </tr>
                         <tr>
                             <td><b>02/21 (Friday)</b></td>
-                            <td>Computing Arrangements of Hypersurfaces</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    Computing Arrangements of Hypersurfaces
+                                  </summary>
+                                  <p>
+                                    In this talk, I will present a Julia package, HypersurfaceRegions.jl, for computing all connected components in the complement of an arrangement of real algebraic hypersurfaces in $R^n$. The package is based on a modified implementation of the algorithm from the paper "Smooth Connectivity in Real Algebraic Varieties" by Cummings et al. I will outline the theory behind the algorithm and our implementation. I will demonstrate the use of the package through various examples.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Ada Wang (Harvard)</td>
                         </tr>
                         <tr>
                             <td>02/27</td>
-                            <td>An algorithm for numerically solving the Maxwell-Bloch equations</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    An algorithm for numerically solving the Maxwell-Bloch equations.
+                                  </summary>
+                                  <p>
+                                    As described by quantum mechanics, energy is absorbed and emitted from atoms in the form of photons with discrete energy values. When an atom absorbs or emits a photon, electrons transition up or down energy levels. The energy associated with these transition determines the frequency, i.e. color, of the absorbed or emitted light. Using Schrodinger’s equation to describe the atomic structure, and Maxwell’s equations to describe the light, a system of equations that fully describes the behavior of the light matter interaction can be derived. This system is known as the Maxwell-Bloch equations. In this talk, an algorithm for approximating solutions to the Maxwell-Bloch equations is discussed. Algorithms for an atom with 2 and 3 energy levels are discussed, as well as an algorithm for the more general M level problem. We also use these algorithms to probe the behavior of soliton solutions for the 2 and 3 energy level systems.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Miles Corn</td>
                         </tr> 
                         <tr>
                             <td>03/06</td>
-                            <td>Spring break: No seminar</td>
+                            <td>
+                              Spring Break: <b>No Seminar</b>
+                          </td>
                             <td></td>
                         </tr> 
                         <tr>
                             <td>03/13</td>
-                            <td>EigenWave: Computing Eigenvalues and Eigenvectors by Time-Filtering the Wave Equation</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    EigenWave: Computing Eigenvalues and Eigenvectors by Time-Filtering the Wave Equation
+
+                                  </summary>
+                                  <p>
+                                    A novel EigenWave algorithm is described to compute eigenvalues and eigenfunctions of elliptic boundary value problems. Based on the recently developed WaveHoltz scheme, the algorithm solves a related time-dependent wave equation as part of an iteration. At each iteration, the solution is filtered in time. After filtering, the solution mainly contains eigenmodes whose eigenvalues are near the target frequency of the filter. The iteration is embedded within a matrix-free Arnoldi algorithm, allowing the efficient computation of multiple eigenpairs near the target frequency. The approach allows the computation of eigenvalues anywhere in the spectrum without the need to invert an indefinite matrix, as is common with other approaches. The approach is demonstrated by finding eigenpairs of the Laplacian in complex geometry using overset grids. Results in two and three-space dimensions are presented. For large enough problems, it is demonstrated that EigenWave can outperform modern Arnoldi-type eigenvalue algorithms.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Ngan Le</td>
                         </tr>
                         <tr>
@@ -121,22 +183,59 @@
                         </tr>
                         <tr>
                             <td>03/27</td>
-                            <td>Accurate and efficient linear-scaling framework for hybrid DFT in finite-gap systems</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    Accurate and efficient linear-scaling framework for hybrid DFT in finite-gap systems
+                                    </summary>
+                                  <p>
+                                    By admixing a fraction of exact exchange (EXX), hybrid DFT provides a more accurate and reliable description of electronic structure than traditional semi-local DFT (density functional theory). However, the conventional reciprocal-space EXX evaluation is cubic scaling and computationally demanding (typically 10x–100x more expensive than semi-local DFT), which limits the applicability of hybrid DFT. To overcome this bottleneck, we have developed an accurate linear-scaling approach that exploits the sparsity of the EXX interaction using a localized representation of the occupied space. For crystalline systems with general k-point sampling, further optimization can be made to exploit both locality and periodicity.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Ju-an Zhang (Cornell)</td>
                         </tr>
                         <tr>
                             <td>04/03</td>
-                            <td>TBA</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    Inferring the number of active molecular motors on a cargo from cargo trajectories
+                                  </summary>
+                                  <p>
+                                    To function, cells must move material internally. This intracellular transport is achieved by molecular motors, which transport vesicle-bound cargo along protein filaments. In vitro experiments have uncovered the mechanochemistry of how single, isolated motors turn chemical energy into mechanical work as they "walk" along a protein filament. In cells, however, multiple motors transport cargo. Some of these motors bind to the protein filament and contribute to cargo transport; others diffuse over the surface of the cargo, and the motors transition between the two roles. It is a challenge to experimentally determine the number of motors on a given cargo, let alone the time-varying number of these motors bound to the protein filament. To address this, we developed a method to estimate the number of motors and the number of filament-bound motors from position-time measurements of the cargo. The method uses our knowledge of the mechanics of the system and the mechanochemistry of the motors to infer the most likely number of all motors on the cargo and of filament-bound motors.
+
+                                  </p>
+                              </details>
+                          </td>
                             <td>Yonatan Ashenafi (WPI)</td>
                         </tr>
                         <tr>
                             <td>04/10</td>
-                            <td>TBA</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    Neighbor-Sampling Based Adam-Type Stochastic Methods for Training Graph Neural Networks
+                                  </summary>
+                                  <p>
+                                    Graph convolutional networks (GCNs) are a powerful tool for graph representation learning. Due to the recursive neighborhood aggregations employed by GCNs, efficient training methods suffer from a lack of theoretical guarantees or are missing important practical elements from modern deep learning algorithms, such as adaptivity and momentum. We present several neighbor-sampling (NS) based Adam-type stochastic methods for solving a nonconvex GCN training problem. We utilize the control variate technique proposed by  [Chen et al., 2017]  to reduce the stochastic error caused by neighbor sampling. Under standard assumptions for Adam-type methods, we show that our methods enjoy the optimal convergence rate. In addition, we conduct extensive numerical experiments on node classification tasks with several benchmark datasets. The results demonstrate superior performance of our methods over classic NS-based SGD that also uses the control-variate technique, especially for large-scale graph datasets.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Molly Noel</td>
                         </tr>
                         <tr>
                             <td>04/17</td>
-                            <td>Algorithmic Designs to Investigate Trustworthiness in Machine Learning Models</td>
+                            <td>
+                              <details>
+                                  <summary>
+                                    Algorithmic Designs to Investigate Trustworthiness in Machine Learning Models
+                                  </summary>
+                                  <p>
+                                    With the surge of AI models in everyday use, examining the trustworthiness of these models remains a crucial concern. Trustworthiness is defined by several key factors: vulnerabilities inherent in the model architecture that can be exploited by adversaries, leading to faulty model use; vulnerabilities in the training data that result in unfair demographic biases, along with mechanisms to mitigate these biases; and latent representations of models that can be used to recover sensitive training information. This presentation will explore these aspects in depth, discussing how adversarial attacks can compromise model integrity, the impact of biased training data on model fairness, and the risks associated with extracting sensitive information from model representations. Additionally, we will examine algorithmic strategies designed to enhance the robustness and fairness of machine learning models, ensuring their reliability and ethical deployment in real-world applications.
+                                  </p>
+                              </details>
+                          </td>
                             <td>Huzaifa Arif</td>
                         </tr>
                     </table>
